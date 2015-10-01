@@ -4,7 +4,7 @@
 # Ubuntu Equip 
 #  Java 7 64-bit Equip
 # Licence: MIT
-# to run: wget --no-check-certificate https://github.com/aglover/ubuntu-equip/raw/master/equip_java7_64.sh && bash equip_java7_64.sh
+# to run: wget --no-check-certificate https://github.com/hangarlabs/ubuntu-equip/raw/master/equip_java7_64.sh && bash equip_java7_64.sh
 
 if [ -d "/usr/lib/jvm/" ]; then
 	echo "There's already an installation of Java JDK in /usr/lib/jvm"
@@ -13,7 +13,7 @@ if [ -d "/usr/lib/jvm/" ]; then
 	exit 0
 fi
 
-wget --no-check-certificate https://github.com/aglover/ubuntu-equip/raw/master/equip_base.sh && bash equip_base.sh
+wget --no-check-certificate https://raw.githubusercontent.com/hangarlabs/ubuntu-equip/master/equip_base.sh && bash equip_base.sh
 
 sudo apt-get install curl -y 
 
