@@ -28,7 +28,7 @@ sudo update-rc.d elasticsearch defaults
 
 wget --no-check-certificate https://raw.github.com/hangarlabs/ubuntu-equip/master/etc/elasticsearch.yml
 
-sudo mkdir /etc/elasticsearch
+#sudo mkdir /etc/elasticsearch
 sudo mv ./elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 
 # you will need to manually start elasticsearch via /etc/init.d/elasticsearch start
