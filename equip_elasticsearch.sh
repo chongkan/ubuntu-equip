@@ -6,7 +6,7 @@
 # Licence: MIT
 # see http://www.elasticsearch.org/tutorials/2010/07/02/setting-up-elasticsearch-on-debian.html
 
-wget --no-check-certificate https://github.com/hangarlabs/ubuntu-equip/raw/master/equip_base.sh && bash equip_base.sh
+wget --no-check-certificate https://raw.githubusercontent.com/hangarlabs/ubuntu-equip/master/equip_base.sh && bash equip_base.sh
 
 sudo apt-get update -y
 sudo apt-get install unzip -y
@@ -18,7 +18,8 @@ mv elasticsearch-1.7.2/ elasticsearch/
 cd elasticsearch/
 bin/plugin -install polyfractal/elasticsearch-inquisitor
 
-sudo mv elasticsearch/ /usr/local/elasticsearch
+cd ..
+sudo mv ./elasticsearch /usr/local/elasticsearch
 
 wget --no-check-certificate https://raw.github.com/hangarlabs/ubuntu-equip/master/etc/elasticsearch.init.d
 
