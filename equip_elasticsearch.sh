@@ -21,13 +21,13 @@ bin/plugin -install polyfractal/elasticsearch-inquisitor
 cd ..
 sudo mv ./elasticsearch /usr/local/elasticsearch
 
-wget --no-check-certificate https://raw.github.com/hangarlabs/ubuntu-equip/master/etc/elasticsearch.init.d
+wget --no-check-certificate https://raw.githubusercontent.com/hangarlabs/ubuntu-equip/master/etc/elasticsearch.init.d
 
 sudo mv ./elasticsearch.init.d /etc/init.d/elasticsearch
 sudo chmod +x /etc/init.d/elasticsearch
 sudo update-rc.d elasticsearch defaults
 
-wget --no-check-certificate https://raw.github.com/hangarlabs/ubuntu-equip/master/etc/elasticsearch.yml
+wget --no-check-certificate https://raw.githubusercontent.com/hangarlabs/ubuntu-equip/master/etc/elasticsearch.yml
 
 sudo mkdir /etc/elasticsearch
 sudo mv ./elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
