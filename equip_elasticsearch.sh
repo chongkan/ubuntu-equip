@@ -34,4 +34,4 @@ sudo mv ./elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 
 # you will need to manually start elasticsearch via /etc/init.d/elasticsearch start
 
-/etc/init.d/elasticsearch start
+#/etc/init.d/elasticsearch start
