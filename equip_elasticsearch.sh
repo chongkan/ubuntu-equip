@@ -18,8 +18,6 @@ mv elasticsearch-1.7.2/ elasticsearch/
 cd elasticsearch/
 bin/plugin -install polyfractal/elasticsearch-inquisitor
 
-/etc/init.d/elasticsearch start
-
 # sudo mv elasticsearch/ /usr/local/elasticsearch
 
 # wget --no-check-certificate https://raw.github.com/aglover/ubuntu-equip/master/etc/elasticsearch.init.d
