@@ -2,4 +2,5 @@ cluster:
    name:   MyCluster
 
 network:
-   host:   _eth0_
+ #  host:   _eth0_
+ host:   localhost
