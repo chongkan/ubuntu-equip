@@ -26,6 +26,6 @@ cd php-protobuf-$VERSION
 phpize
 ./configure
 sudo make install
-echo extension=protobuf.so > /etc/php5/mods-available/protobuf.ini
+sudo echo extension=protobuf.so > /etc/php5/mods-available/protobuf.ini
 cd ..
 sudo rm -rf php-protobuf-$VERSION
