@@ -5,7 +5,7 @@
 #  Java 6 Equip
 # Licence: MIT
 
-wget --no-check-certificate https://github.com/aglover/ubuntu-equip/raw/master/equip_base.sh && bash equip_base.sh
+# wget --no-check-certificate https://github.com/aglover/ubuntu-equip/raw/master/equip_base.sh && bash equip_base.sh
 
 sudo apt-get update
 sudo apt-get install -y protobuf-compiler
