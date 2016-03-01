@@ -23,7 +23,7 @@ cd /tmp
 curl https://codeload.github.com/allegro/php-protobuf/tar.gz/$VERSION | tar -xvz
 
 cd php-protobuf-$VERSION
-phpize && ./configure && make install
+phpize && ./configure && sudo make install
 echo extension=protobuf.so > /etc/php5/cli/conf.d/protobuf.ini
 cd ..
 sudo rm -rf php-protobuf-$VERSION
