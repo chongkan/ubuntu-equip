@@ -1,6 +1,15 @@
-apt-get update
-apt-get install -y protobuf-compiler
-apt-get install -y php5-dev
+#!/bin/sh
+
+#
+# Ubuntu Equip 
+#  Java 6 Equip
+# Licence: MIT
+
+wget --no-check-certificate https://github.com/aglover/ubuntu-equip/raw/master/equip_base.sh && bash equip_base.sh
+
+sudo apt-get update
+sudo apt-get install -y protobuf-compiler
+sudo apt-get install -y php5-dev
 
 pear channel-discover pear.pollinimini.net
 pear install drslump/Protobuf-beta
@@ -15,4 +24,4 @@ cd php-protobuf-$VERSION
 phpize && ./configure && make install
 echo extension=protobuf.so > /etc/php5/cli/conf.d/protobuf.ini
 cd ..
-rm -rf php-protobuf-$VERSION
+sudo rm -rf php-protobuf-$VERSION
