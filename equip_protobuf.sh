@@ -10,6 +10,8 @@ wget --no-check-certificate https://github.com/aglover/ubuntu-equip/raw/master/e
 sudo apt-get update
 sudo apt-get install -y protobuf-compiler
 sudo apt-get install -y php5-dev
+sudo apt-get install curl
+
 
 pear channel-discover pear.pollinimini.net
 pear install drslump/Protobuf-beta
